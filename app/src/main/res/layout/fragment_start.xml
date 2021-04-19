@@ -7,7 +7,6 @@
         <variable name="name" type="String"/>
         <variable name="title" type="String"/>
         <variable name="text" type="String"/>
-        <variable name="picture" type="String"/>
     </data>
 
     <LinearLayout
@@ -19,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="@{name}"
+            android:text="@{title}"
             android:textAlignment="center"
             android:textColor="#ff0000"
             android:textSize="40dp" />
@@ -28,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="from"
+            android:text="@{text}"
             android:textAlignment="center"
             android:textColor="@color/silver"
             android:textSize="15dp" />
@@ -49,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="Name"
+            android:text="@{name}"
             android:textAlignment="center"
             android:textColor="#ff0000"
             android:textSize="40dp" />

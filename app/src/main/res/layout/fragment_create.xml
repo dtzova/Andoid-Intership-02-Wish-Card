@@ -26,22 +26,25 @@
             android:orientation="vertical">
 
             <TextView style="@style/textView"
-                android:text="Поле ввода разного типа"/>
+                android:text="Name"/>
 
             <EditText style="@style/editText"
+                android:id="@+id/name_field"
                 android:hint="@string/et_name"/>
 
             <TextView style="@style/textView"
-                android:text="Поле ввода разного типа"/>
+                android:text="Title"/>
 
             <EditText style="@style/editText"
-                android:hint="@string/et_name"/>
+                android:id="@+id/title_field"
+                android:hint="enter title here"/>
 
             <TextView style="@style/textView"
-                android:text="Поле ввода разного типа"/>
+                android:text="Text"/>
 
             <EditText style="@style/editText"
-                android:hint="@string/et_name"/>
+                android:id="@+id/text_field"
+                android:hint="enter text here"/>
 
         </LinearLayout>
 
@@ -54,10 +57,12 @@
 
     <Button
         style="@style/btb_start"
+        android:id="@+id/btn_start"
         android:text="@string/name_btn_start" />
 
     <Button
         style="@style/btb_launch"
+        android:id="@+id/btn_launch"
         android:text="@string/name_btn_launch" />
 
     <LinearLayout
