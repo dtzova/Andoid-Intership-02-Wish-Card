@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView style="@style/textView"
+                android:text="Поле ввода разного типа"/>
+
+            <EditText style="@style/editText"
+                android:hint="@string/et_name"/>
+
+            <TextView style="@style/textView"
+                android:text="Поле ввода разного типа"/>
+
+            <EditText style="@style/editText"
+                android:hint="@string/et_name"/>
+
+            <TextView style="@style/textView"
+                android:text="Поле ввода разного типа"/>
+
+            <EditText style="@style/editText"
+                android:hint="@string/et_name"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Button
+        style="@style/btb_start"
+        android:text="@string/name_btn_start" />
+
+    <Button
+        style="@style/btb_launch"
+        android:text="@string/name_btn_launch" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:src="@drawable/arrow_left"/>
+
+    <ImageSwitcher
+        android:id="@+id/image_switcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+</LinearLayout>
+    </layout>
