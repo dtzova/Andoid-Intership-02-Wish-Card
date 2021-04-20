@@ -4,10 +4,9 @@ import androidx.lifecycle.ViewModel
 
 class CreateViewModel : ViewModel() {
 
-    var title = ""
+    lateinit var data : WishData
 
     override fun onCleared() {
         super.onCleared()
-
     }
 }
